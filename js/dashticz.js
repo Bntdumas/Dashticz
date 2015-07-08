@@ -89,7 +89,7 @@ $(document).ready(function(){
 							//if(typeof(uservars['dashticz_xbmcswitch'])!=='undefined') _XBMCSWITCH = uservars['dashticz_xbmcswitch']['Value'];
 						}
 						
-						if(_LANGUAGE!=='en_US' && _LANGUAGE!=='nl_NL' && _LANGUAGE!=='de_DE'){
+						if(_LANGUAGE!=='en_US' && _LANGUAGE!=='nl_NL' && _LANGUAGE!=='de_DE' && _LANGUAGE!=='fr_FR'){
 							_LANGUAGE='en_US';	
 						}
 						
