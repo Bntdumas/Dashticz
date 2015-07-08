@@ -34,6 +34,11 @@ lang['blocksettings_blocktitle'] = 'Titel';
 lang['blocksettings_switchtype'] = 'Schakelaar type';
 lang['blocksettings_hide'] = 'Blok verbergen';
 
+lang['current_off'] = 'Uit';
+lang['current_on'] = 'Aan';
+lang['current_open'] = 'Open';
+lang['current_close'] = 'Gesloten';
+
 lang['cancel'] = 'Annuleren';
 lang['save'] = 'Opslaan';
 lang['saving'] = 'Bezig met opslaan...';

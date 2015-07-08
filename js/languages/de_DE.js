@@ -34,6 +34,11 @@ lang['blocksettings_blocktitle'] = 'Block Name';
 lang['blocksettings_switchtype'] = 'Schaltertyp';
 lang['blocksettings_hide'] = 'Block verbergen';
 
+lang['current_off'] = 'Weg';
+lang['current_on'] = 'Auf';
+lang['current_open'] = 'Open';
+lang['current_close'] = 'Geschlossen';
+
 lang['cancel'] = 'Abbrechen';
 lang['save'] = 'Speichern';
 lang['saving'] = 'speichert';

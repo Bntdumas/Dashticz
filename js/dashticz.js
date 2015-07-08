@@ -538,11 +538,11 @@ function getDevices(){
 									var level = '';
 								}
 								
-								if(current=='Off') current = 'Uit';
-								if(current=='On') current = 'Aan';
+								if(current=='Off') current = lang['current_off'];
+								if(current=='On') current = lang['current_on'];
 								
-								if(current=='Open') current = 'Open';
-								if(current=='Closed') current = 'Gesloten';
+								if(current=='Open') current = lang['current_open'];
+								if(current=='Closed') current = lang['current_closed'];
 								
 								html = str_replace('[IDX]',element['idx'],html);
 								html = str_replace('[NAME]',name,html);

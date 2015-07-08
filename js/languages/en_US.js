@@ -34,6 +34,11 @@ lang['blocksettings_blocktitle'] = 'Title';
 lang['blocksettings_switchtype'] = 'Switch type';
 lang['blocksettings_hide'] = 'Hide block';
 
+lang['current_off'] = 'Off';
+lang['current_on'] = 'On';
+lang['current_open'] = 'Open';
+lang['current_close'] = 'Closed';
+
 lang['cancel'] = 'Cancel';
 lang['save'] = 'Save';
 lang['saving'] = 'Saving...';
