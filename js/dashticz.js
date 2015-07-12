@@ -33,6 +33,7 @@ $(document).ready(function(){
 	if(_HOST_DOMOTICZ=='') alert('Fill in the path to Domoticz in CONFIG.js!!');
 	else {
 						
+		setInterval(function () {autoGetDevices()}, 500);
 		$.ajax({
 			url: _HOST_DOMOTICZ+'/json.htm?type=command&param=getSunRiseSet&jsoncallback=?',
 			type: 'GET',async: false,contentType: "application/json",dataType: 'jsonp',
@@ -105,6 +106,7 @@ $(document).ready(function(){
 						$.ajax({url: 'js/settings.js', async: false,dataType: "script"});
 						$.ajax({url: 'js/edit.js', async: false,dataType: "script"});
 						$.ajax({url: 'js/switches.js', async: false,dataType: "script"});
+						$.ajax({url: 'apps/coffee/coffee.js', async: false,dataType: "script"});
 						
 						$.ajax({url: 'themes/'+_THEME+'/js/config.js', async: false,dataType: "script"});
 						$.ajax({url: 'themes/'+_THEME+'/js/blocks.js', async: false,dataType: "script"});
@@ -500,7 +502,13 @@ function getDevices(){
 									var html = blocks['dimmer'];
 									var setslide = 'sl'+element['idx'];
 								}
-								else{// if(element['TypeImg']!=='temperature') {
+								else if(data.result[r]['HardwareName'] == 'Coffee machine') {
+									var html = blocks['coffee'];
+									var status = element['Data'];
+									var lastSeen = element['lastUpdate'];
+									html = str_replace('[COFFEE_STATUS_LOWER]',element['Data'].toLowerCase(),html);
+							    }
+								else {// if(element['TypeImg']!=='temperature') {
 									var html = blocks['noswitch'];
 								}
 								
